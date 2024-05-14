@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <style>
+         
+               .item1 { grid-area: header;}
+               .item2 { grid-area: item2; }
+               .item3 { grid-area: item3; }
+               .item4 { grid-area: item4; }
+            .mainDiv{
+                display: grid;
+                gap: 10px;
+                padding: 10px;
+                width: 100%;
+                height: 100%;
+                grid-template-areas:
+    'header header header header header'
+    'item2 item2 item2 item3 item3 '
+    'item2 item2 item2 item3 item3 '
+    'item2 item2 item2 item3 item3 '
+    'item2 item2 item2 item3 item3 '
+    'item4 item4 item4 item4 item4 '
+    'item4 item4 item4 item4 item4 '
+                
+            }
+            .mainDiv >div {
+                background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+            }
+         
+        </style>
+    </head>
+    <body>
+        <div class="mainDiv">
+            <div style="background-color: black;" class="item1"></div>
+            <div style="background-color: yellow;" class="item2"></div>
+            <div style="background-color: green;" class="item3"></div>
+            <div style="background-color: blue;" class="item4"></div>
+        </div>
+        
+    </body>
+</html>
